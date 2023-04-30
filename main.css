@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+  /* animation: fade-out 5s ease 1; */
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(249, 193, 223);
+  transition: all 2s ease;
+  /* transition-duration: 5s; */
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.cont-watch {
+  border: 3px red dotted;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  position: absolute;
+  z-index: 10;
+}
+
+.button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.first-container {
+  position: absolute;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.waviy {
+  position: absolute;
+  top: 50px;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+  font-size: 80px;
+  animation: breathing 5s ease-out infinite;
+}
+
+.waviy-bg {
+  top: -10px;
+  left: -22px;
+  position: absolute;
+  width: 450px;
+  height: 150px;
+  background-color: rgb(247, 160, 206);
+  box-shadow: 2px 6px 12px 0px black, inset 3px 3px 4px 2px #ffdff0c7;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+#happy {
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  /* color: #fff; */
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+#audio {
+  position: absolute;
+  bottom: 1px;
+
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+#chayanne-1 {
+  position: absolute;
+  width: 35%;
+  animation: breathing 5s ease-out infinite;
+  left: 100px;
+  bottom: 50px;
+  filter: drop-shadow(0px 0px 12px #f9c1df);
+}
+
+#chayanne-2 {
+  position: absolute;
+  width: 26%;
+  animation: breathing 5s ease-out infinite;
+  right: 200px;
+  bottom: 50px;
+  border-radius: 50px;
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+#gif-1 {
+  width: 200px;
+  position: absolute;
+  left: 10px;
+}
+
+#gif-2 {
+  width: 200px;
+  position: absolute;
+}
+
+#gif-3 {
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#gif-4 {
+  right: 10px;
+  width: 200px;
+  position: absolute;
+}
+
+#gif-5 {
+  top: 10px;
+  left: 50px;
+  width: 200px;
+  position: absolute;
+}
+
+#gif-6 {
+  top: 10px;
+  right: 50px;
+  width: 200px;
+  position: absolute;
+}
